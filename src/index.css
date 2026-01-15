@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme {
+  /* Cowboys Colors */
+  --color-cowboys-navy: #041E42;
+  --color-cowboys-silver: #869397;
+  --color-cowboys-white: #FFFFFF;
+  --color-cowboys-royal: #003594;
+  --color-cowboys-dark: #0A0E14;
+  
+  /* PFF Grade Colors */
+  --color-pff-elite: #1E3A8A;
+  --color-pff-high: #166534;
+  --color-pff-above: #65A30D;
+  --color-pff-average: #CA8A04;
+  --color-pff-below: #EA580C;
+  --color-pff-poor: #DC2626;
+  
+  /* Fonts */
+  --font-display: "Inter", system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-display);
+  background: linear-gradient(135deg, var(--color-cowboys-dark) 0%, #0F172A 50%, var(--color-cowboys-navy) 100%);
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(134, 147, 151, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-cowboys-silver);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-cowboys-royal);
+}
+
+/* Number formatting */
+.money {
+  font-variant-numeric: tabular-nums;
+}

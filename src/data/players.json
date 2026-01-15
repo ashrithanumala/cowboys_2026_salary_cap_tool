@@ -1,0 +1,721 @@
+{
+  "salaryCap": {
+    "2026": 295000000,
+    "2027": 315000000,
+    "2028": 335000000,
+    "2029": 355000000
+  },
+  "players": [
+    {
+      "id": 1,
+      "name": "Dak Prescott",
+      "position": "QB",
+      "age": 33,
+      "pffGrade": 86.9,
+      "salary": {
+        "2026": { "capHit": 74068430, "baseSalary": 59000000, "dead": 145600000, "savings": -71531570 },
+        "2027": { "capHit": 68385783, "baseSalary": 55000000, "dead": 77231570, "savings": -8845787 },
+        "2028": { "capHit": 78385783, "baseSalary": 65000000, "dead": 18385783, "savings": 60000000 },
+        "2029": { "capHit": 9150000, "baseSalary": 0, "dead": 9150000, "savings": 0 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2029
+    },
+    {
+      "id": 2,
+      "name": "CeeDee Lamb",
+      "position": "WR",
+      "age": 27,
+      "pffGrade": 77.6,
+      "salary": {
+        "2026": { "capHit": 38600000, "baseSalary": 27000000, "dead": 64400000, "savings": -25800000 },
+        "2027": { "capHit": 41600000, "baseSalary": 31000000, "dead": 37400000, "savings": 4200000 },
+        "2028": { "capHit": 21391000, "baseSalary": 10800000, "dead": 10591000, "savings": 10800000 },
+        "2029": { "capHit": 10800000, "baseSalary": 0, "dead": 10800000, "savings": 0 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2030
+    },
+    {
+      "id": 3,
+      "name": "Tyler Smith",
+      "position": "LG",
+      "age": 25,
+      "pffGrade": 81.1,
+      "salary": {
+        "2026": { "capHit": 27502300, "baseSalary": 17500000, "dead": 40202300, "savings": -12700000 },
+        "2027": { "capHit": 15280000, "baseSalary": 12000000, "dead": 22702300, "savings": -7422300 },
+        "2028": { "capHit": 22280000, "baseSalary": 19000000, "dead": 10702300, "savings": 11577700 },
+        "2029": { "capHit": 10480000, "baseSalary": 8000000, "dead": 2702300, "savings": 7777700 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2031
+    },
+    {
+      "id": 4,
+      "name": "Quinnen Williams",
+      "position": "DT",
+      "age": 29,
+      "pffGrade": 88.8,
+      "salary": {
+        "2026": { "capHit": 21750000, "baseSalary": 18000000, "dead": 3750000, "savings": 18000000 },
+        "2027": { "capHit": 25500000, "baseSalary": 22000000, "dead": 0, "savings": 25500000 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2028
+    },
+    {
+      "id": 5,
+      "name": "Kenny Clark",
+      "position": "DT",
+      "age": 31,
+      "pffGrade": 67.6,
+      "salary": {
+        "2026": { "capHit": 21500000, "baseSalary": 20000000, "dead": 0, "savings": 21500000 },
+        "2027": { "capHit": 20000000, "baseSalary": 18000000, "dead": 0, "savings": 20000000 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2028
+    },
+    {
+      "id": 6,
+      "name": "Osa Odighizuwa",
+      "position": "DT",
+      "age": 28,
+      "pffGrade": 65.9,
+      "salary": {
+        "2026": { "capHit": 20750000, "baseSalary": 17000000, "dead": 20500000, "savings": 250000 },
+        "2027": { "capHit": 24500000, "baseSalary": 21000000, "dead": 12500000, "savings": 12000000 },
+        "2028": { "capHit": 24500000, "baseSalary": 22000000, "dead": 4500000, "savings": 20000000 },
+        "2029": { "capHit": 4000000, "baseSalary": 0, "dead": 4000000, "savings": 0 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2029
+    },
+    {
+      "id": 7,
+      "name": "Terence Steele",
+      "position": "RT",
+      "age": 29,
+      "pffGrade": 63.6,
+      "salary": {
+        "2026": { "capHit": 18125000, "baseSalary": 15000000, "dead": 6500000, "savings": 11625000 },
+        "2027": { "capHit": 21125000, "baseSalary": 18000000, "dead": 3250000, "savings": 17875000 },
+        "2028": { "capHit": 18625000, "baseSalary": 16000000, "dead": 0, "savings": 18625000 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2029
+    },
+    {
+      "id": 8,
+      "name": "DaRon Bland",
+      "position": "CB",
+      "age": 27,
+      "pffGrade": 65.2,
+      "salary": {
+        "2026": { "capHit": 17400000, "baseSalary": 12000000, "dead": 35600000, "savings": -18200000 },
+        "2027": { "capHit": 17400000, "baseSalary": 12000000, "dead": 28000000, "savings": -10600000 },
+        "2028": { "capHit": 11200000, "baseSalary": 8000000, "dead": 20400000, "savings": -9200000 },
+        "2029": { "capHit": 15400000, "baseSalary": 12000000, "dead": 12400000, "savings": 3000000 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2030
+    },
+    {
+      "id": 9,
+      "name": "Jake Ferguson",
+      "position": "TE",
+      "age": 27,
+      "pffGrade": 59.4,
+      "salary": {
+        "2026": { "capHit": 10400000, "baseSalary": 7000000, "dead": 16200000, "savings": -5800000 },
+        "2027": { "capHit": 9400000, "baseSalary": 6500000, "dead": 11400000, "savings": -2000000 },
+        "2028": { "capHit": 10025000, "baseSalary": 7500000, "dead": 5600000, "savings": 4425000 },
+        "2029": { "capHit": 19775000, "baseSalary": 17000000, "dead": 800000, "savings": 18975000 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2030
+    },
+    {
+      "id": 10,
+      "name": "Malik Hooker",
+      "position": "S",
+      "age": 30,
+      "pffGrade": 60.8,
+      "salary": {
+        "2026": { "capHit": 9000000, "baseSalary": 8500000, "dead": 0, "savings": 9000000 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2027
+    },
+    {
+      "id": 11,
+      "name": "Logan Wilson",
+      "position": "LB",
+      "age": 30,
+      "pffGrade": 52.6,
+      "salary": {
+        "2026": { "capHit": 6550000, "baseSalary": 5500000, "dead": 1050000, "savings": 5500000 },
+        "2027": { "capHit": 7215000, "baseSalary": 6500000, "dead": 0, "savings": 7215000 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2028
+    },
+    {
+      "id": 12,
+      "name": "Tyler Booker",
+      "position": "RG",
+      "age": 22,
+      "pffGrade": 76.8,
+      "salary": {
+        "2026": { "capHit": 5125845, "baseSalary": 4500000, "dead": 2750845, "savings": 2375000 },
+        "2027": { "capHit": 6151014, "baseSalary": 5500000, "dead": 1375422, "savings": 4775592 },
+        "2028": { "capHit": 7176183, "baseSalary": 6500000, "dead": 0, "savings": 7176183 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2029
+    },
+    {
+      "id": 13,
+      "name": "KaVontae Turpin",
+      "position": "WR",
+      "age": 30,
+      "pffGrade": 61.6,
+      "salary": {
+        "2026": { "capHit": 4700000, "baseSalary": 4200000, "dead": 500000, "savings": 4200000 },
+        "2027": { "capHit": 5700000, "baseSalary": 5200000, "dead": 0, "savings": 5700000 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2028
+    },
+    {
+      "id": 14,
+      "name": "Bryan Anger",
+      "position": "P",
+      "age": 38,
+      "pffGrade": null,
+      "salary": {
+        "2026": { "capHit": 4100000, "baseSalary": 3800000, "dead": 0, "savings": 4100000 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2027
+    },
+    {
+      "id": 15,
+      "name": "Tyler Guyton",
+      "position": "LT",
+      "age": 25,
+      "pffGrade": 57.8,
+      "salary": {
+        "2026": { "capHit": 3587947, "baseSalary": 3000000, "dead": 1912053, "savings": 1675894 },
+        "2027": { "capHit": 4185938, "baseSalary": 3600000, "dead": 956026, "savings": 3229912 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2028
+    },
+    {
+      "id": 16,
+      "name": "Soloman Thomas",
+      "position": "DT",
+      "age": 31,
+      "pffGrade": 59.6,
+      "salary": {
+        "2026": { "capHit": 3250000, "baseSalary": 3000000, "dead": 0, "savings": 3250000 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2027
+    },
+    {
+      "id": 17,
+      "name": "Hunter Luepke",
+      "position": "FB",
+      "age": 26,
+      "pffGrade": null,
+      "salary": {
+        "2026": { "capHit": 3000000, "baseSalary": 2800000, "dead": 200000, "savings": 2800000 },
+        "2027": { "capHit": 3500000, "baseSalary": 3300000, "dead": 0, "savings": 3500000 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2028
+    },
+    {
+      "id": 18,
+      "name": "Markquese Bell",
+      "position": "S",
+      "age": 27,
+      "pffGrade": 46.8,
+      "salary": {
+        "2026": { "capHit": 2833333, "baseSalary": 2600000, "dead": 233333, "savings": 2600000 },
+        "2027": { "capHit": 3633334, "baseSalary": 3400000, "dead": 0, "savings": 3633334 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2028
+    },
+    {
+      "id": 19,
+      "name": "Donovan Ezeiruaku",
+      "position": "DE",
+      "age": 23,
+      "pffGrade": 73.1,
+      "salary": {
+        "2026": { "capHit": 2307974, "baseSalary": 2000000, "dead": 1102974, "savings": 1205000 },
+        "2027": { "capHit": 2769569, "baseSalary": 2500000, "dead": 551487, "savings": 2218082 },
+        "2028": { "capHit": 3231164, "baseSalary": 3000000, "dead": 0, "savings": 3231164 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2029
+    },
+    {
+      "id": 20,
+      "name": "Luke Schoonmaker",
+      "position": "TE",
+      "age": 28,
+      "pffGrade": null,
+      "salary": {
+        "2026": { "capHit": 1993946, "baseSalary": 1800000, "dead": 0, "savings": 1993946 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2027
+    },
+    {
+      "id": 21,
+      "name": "Jonathan Mingo",
+      "position": "WR",
+      "age": 25,
+      "pffGrade": null,
+      "salary": {
+        "2026": { "capHit": 1957719, "baseSalary": 1800000, "dead": 0, "savings": 1957719 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2027
+    },
+    {
+      "id": 22,
+      "name": "DeMarvion Overshown",
+      "position": "LB",
+      "age": 26,
+      "pffGrade": 67.4,
+      "salary": {
+        "2026": { "capHit": 1715009, "baseSalary": 1500000, "dead": 0, "savings": 1715009 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2027
+    },
+    {
+      "id": 23,
+      "name": "Donovan Wilson",
+      "position": "S",
+      "age": 29,
+      "pffGrade": 50.8,
+      "salary": {
+        "2026": { "capHit": 1650000, "baseSalary": 0, "dead": 1650000, "savings": 0 }
+      },
+      "contractStatus": "VOID",
+      "freeAgentYear": 2026
+    },
+    {
+      "id": 24,
+      "name": "Cooper Beebe",
+      "position": "C",
+      "age": 25,
+      "pffGrade": 67.9,
+      "salary": {
+        "2026": { "capHit": 1619923, "baseSalary": 1400000, "dead": 519923, "savings": 1100000 },
+        "2027": { "capHit": 1889910, "baseSalary": 1700000, "dead": 0, "savings": 1889910 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2028
+    },
+    {
+      "id": 25,
+      "name": "Marist Liufau",
+      "position": "LB",
+      "age": 25,
+      "pffGrade": null,
+      "salary": {
+        "2026": { "capHit": 1552231, "baseSalary": 1400000, "dead": 352231, "savings": 1200000 },
+        "2027": { "capHit": 1810936, "baseSalary": 1600000, "dead": 0, "savings": 1810936 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2028
+    },
+    {
+      "id": 26,
+      "name": "Trent Sieg",
+      "position": "LS",
+      "age": 31,
+      "pffGrade": null,
+      "salary": {
+        "2026": { "capHit": 1483333, "baseSalary": 1400000, "dead": 83333, "savings": 1400000 },
+        "2027": { "capHit": 1528334, "baseSalary": 1450000, "dead": 0, "savings": 1528334 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2028
+    },
+    {
+      "id": 27,
+      "name": "Shavon Revel Jr.",
+      "position": "CB",
+      "age": 25,
+      "pffGrade": 35.2,
+      "salary": {
+        "2026": { "capHit": 1478805, "baseSalary": 1200000, "dead": 578805, "savings": 900000 },
+        "2027": { "capHit": 1774566, "baseSalary": 1500000, "dead": 289402, "savings": 1485164 },
+        "2028": { "capHit": 2070327, "baseSalary": 1800000, "dead": 0, "savings": 2070327 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2029
+    },
+    {
+      "id": 28,
+      "name": "James Houston",
+      "position": "DE",
+      "age": 28,
+      "pffGrade": 69.1,
+      "salary": {
+        "2026": { "capHit": 1145000, "baseSalary": 1100000, "dead": 0, "savings": 1145000 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2027
+    },
+    {
+      "id": 29,
+      "name": "Caelen Carson",
+      "position": "CB",
+      "age": 24,
+      "pffGrade": null,
+      "salary": {
+        "2026": { "capHit": 1138569, "baseSalary": 1000000, "dead": 138569, "savings": 1000000 },
+        "2027": { "capHit": 1253569, "baseSalary": 1100000, "dead": 0, "savings": 1253569 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2028
+    },
+    {
+      "id": 30,
+      "name": "Jaydon Blue",
+      "position": "RB",
+      "age": 22,
+      "pffGrade": null,
+      "salary": {
+        "2026": { "capHit": 1111767, "baseSalary": 950000, "dead": 361767, "savings": 750000 },
+        "2027": { "capHit": 1226767, "baseSalary": 1100000, "dead": 180883, "savings": 1045884 },
+        "2028": { "capHit": 1341767, "baseSalary": 1250000, "dead": 0, "savings": 1341767 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2029
+    },
+    {
+      "id": 31,
+      "name": "Shemar James",
+      "position": "LB",
+      "age": 22,
+      "pffGrade": 39.9,
+      "salary": {
+        "2026": { "capHit": 1110859, "baseSalary": 950000, "dead": 360859, "savings": 750000 },
+        "2027": { "capHit": 1225859, "baseSalary": 1100000, "dead": 180429, "savings": 1045430 },
+        "2028": { "capHit": 1340859, "baseSalary": 1250000, "dead": 0, "savings": 1340859 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2029
+    },
+    {
+      "id": 32,
+      "name": "Brevyn Spann-Ford",
+      "position": "TE",
+      "age": 27,
+      "pffGrade": null,
+      "salary": {
+        "2026": { "capHit": 1081667, "baseSalary": 1000000, "dead": 0, "savings": 1081667 }
+      },
+      "contractStatus": "UFA",
+      "freeAgentYear": 2026
+    },
+    {
+      "id": 33,
+      "name": "Perrion Winfrey",
+      "position": "DT",
+      "age": 26,
+      "pffGrade": null,
+      "salary": {
+        "2026": { "capHit": 1075000, "baseSalary": 1000000, "dead": 0, "savings": 1075000 }
+      },
+      "contractStatus": "UFA",
+      "freeAgentYear": 2026
+    },
+    {
+      "id": 34,
+      "name": "Joe Milton III",
+      "position": "QB",
+      "age": 26,
+      "pffGrade": null,
+      "salary": {
+        "2026": { "capHit": 1075000, "baseSalary": 1000000, "dead": 75000, "savings": 1000000 },
+        "2027": { "capHit": 1190000, "baseSalary": 1100000, "dead": 0, "savings": 1190000 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2028
+    },
+    {
+      "id": 35,
+      "name": "Isaiah Land",
+      "position": "DE",
+      "age": 26,
+      "pffGrade": null,
+      "salary": {
+        "2026": { "capHit": 1075000, "baseSalary": 1000000, "dead": 75000, "savings": 1000000 },
+        "2027": { "capHit": 1190000, "baseSalary": 1100000, "dead": 0, "savings": 1190000 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2028
+    },
+    {
+      "id": 36,
+      "name": "Trevor Keegan",
+      "position": "G",
+      "age": 26,
+      "pffGrade": null,
+      "salary": {
+        "2026": { "capHit": 1075000, "baseSalary": 1000000, "dead": 75000, "savings": 1000000 },
+        "2027": { "capHit": 1190000, "baseSalary": 1100000, "dead": 0, "savings": 1190000 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2028
+    },
+    {
+      "id": 37,
+      "name": "Ryan Flournoy",
+      "position": "WR",
+      "age": 27,
+      "pffGrade": 80.3,
+      "salary": {
+        "2026": { "capHit": 1075000, "baseSalary": 1000000, "dead": 0, "savings": 1075000 }
+      },
+      "contractStatus": "UFA",
+      "freeAgentYear": 2026
+    },
+    {
+      "id": 38,
+      "name": "Israel Abanikanda",
+      "position": "RB",
+      "age": 24,
+      "pffGrade": null,
+      "salary": {
+        "2026": { "capHit": 1075000, "baseSalary": 1000000, "dead": 75000, "savings": 1000000 },
+        "2027": { "capHit": 1190000, "baseSalary": 1100000, "dead": 0, "savings": 1190000 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2028
+    },
+    {
+      "id": 39,
+      "name": "George Pickens",
+      "position": "WR",
+      "age": 24,
+      "pffGrade": 85.9,
+      "salary": {
+        "2026": { "capHit": 0, "baseSalary": 0, "dead": 0, "savings": 0 }
+      },
+      "contractStatus": "UFA",
+      "freeAgentYear": 2026,
+      "note": "Acquired via trade - contract TBD",
+      "projectedContract": { "years": 4, "total": 120000000, "aav": 30000000, "source": "Star-Telegram" }
+    },
+    {
+      "id": 40,
+      "name": "Trevon Diggs",
+      "position": "CB",
+      "age": 28,
+      "pffGrade": 59.8,
+      "salary": {
+        "2026": { "capHit": 5882356, "baseSalary": 0, "dead": 5882356, "savings": 0 }
+      },
+      "contractStatus": "Dead Cap",
+      "freeAgentYear": 2026,
+      "note": "Dead cap from release"
+    },
+    {
+      "id": 41,
+      "name": "Trikweze Bridges",
+      "position": "CB",
+      "age": 25,
+      "pffGrade": 49.3,
+      "salary": {
+        "2026": { "capHit": 1005000, "baseSalary": 950000, "dead": 55000, "savings": 950000 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2027
+    },
+    {
+      "id": 42,
+      "name": "Nathan Thomas",
+      "position": "LT",
+      "age": 24,
+      "pffGrade": 36.5,
+      "salary": {
+        "2026": { "capHit": 1031493, "baseSalary": 950000, "dead": 81493, "savings": 950000 }
+      },
+      "contractStatus": "Signed",
+      "freeAgentYear": 2027
+    },
+    {
+      "id": 43,
+      "name": "Kenneth Murray",
+      "position": "LB",
+      "age": 28,
+      "pffGrade": 38.8,
+      "salary": {
+        "2026": { "capHit": 0, "baseSalary": 0, "dead": 0, "savings": 0 }
+      },
+      "contractStatus": "UFA",
+      "freeAgentYear": 2026,
+      "projectedContract": { "years": 1, "total": 4000000, "aav": 4000000, "source": "Star-Telegram" }
+    },
+    {
+      "id": 44,
+      "name": "Javonte Williams",
+      "position": "RB",
+      "age": 26,
+      "pffGrade": 75.3,
+      "salary": {
+        "2026": { "capHit": 0, "baseSalary": 0, "dead": 0, "savings": 0 }
+      },
+      "contractStatus": "UFA",
+      "freeAgentYear": 2026,
+      "projectedContract": { "years": 3, "total": 20500000, "aav": 6833333, "source": "Star-Telegram" }
+    },
+    {
+      "id": 45,
+      "name": "Jadaveon Clowney",
+      "position": "DE",
+      "age": 33,
+      "pffGrade": 79.2,
+      "salary": {
+        "2026": { "capHit": 0, "baseSalary": 0, "dead": 0, "savings": 0 }
+      },
+      "contractStatus": "UFA",
+      "freeAgentYear": 2026,
+      "projectedContract": { "years": 1, "total": 5200000, "aav": 5200000, "source": "Star-Telegram" }
+    },
+    {
+      "id": 46,
+      "name": "Dante Fowler",
+      "position": "DE",
+      "age": 32,
+      "pffGrade": 77.6,
+      "salary": {
+        "2026": { "capHit": 0, "baseSalary": 0, "dead": 0, "savings": 0 }
+      },
+      "contractStatus": "UFA",
+      "freeAgentYear": 2026,
+      "projectedContract": { "years": 1, "total": 3500000, "aav": 3500000, "source": "Star-Telegram" }
+    },
+    {
+      "id": 47,
+      "name": "TJ Bass",
+      "position": "LG",
+      "age": 26,
+      "pffGrade": 65.8,
+      "salary": {
+        "2026": { "capHit": 0, "baseSalary": 0, "dead": 0, "savings": 0 }
+      },
+      "contractStatus": "RFA",
+      "freeAgentYear": 2026,
+      "projectedContract": { "years": 1, "total": 5600000, "aav": 5600000, "source": "Star-Telegram" }
+    },
+    {
+      "id": 48,
+      "name": "Juanyeh Thomas",
+      "position": "S",
+      "age": 25,
+      "pffGrade": 60.0,
+      "salary": {
+        "2026": { "capHit": 0, "baseSalary": 0, "dead": 0, "savings": 0 }
+      },
+      "contractStatus": "RFA",
+      "freeAgentYear": 2026,
+      "projectedContract": { "years": 1, "total": 1000000, "aav": 1000000, "source": "Star-Telegram" }
+    },
+    {
+      "id": 49,
+      "name": "Sam Williams",
+      "position": "DE",
+      "age": 26,
+      "pffGrade": 57.5,
+      "salary": {
+        "2026": { "capHit": 0, "baseSalary": 0, "dead": 0, "savings": 0 }
+      },
+      "contractStatus": "UFA",
+      "freeAgentYear": 2026,
+      "projectedContract": { "years": 1, "total": 2000000, "aav": 2000000, "source": "Star-Telegram" }
+    },
+    {
+      "id": 50,
+      "name": "Jack Sanborn",
+      "position": "LB",
+      "age": 26,
+      "pffGrade": 56.3,
+      "salary": {
+        "2026": { "capHit": 0, "baseSalary": 0, "dead": 0, "savings": 0 }
+      },
+      "contractStatus": "UFA",
+      "freeAgentYear": 2026,
+      "projectedContract": { "years": 1, "total": 1200000, "aav": 1200000, "source": "Star-Telegram" }
+    },
+    {
+      "id": 51,
+      "name": "Reddy Steward",
+      "position": "CB",
+      "age": 24,
+      "pffGrade": 51.1,
+      "salary": {
+        "2026": { "capHit": 0, "baseSalary": 0, "dead": 0, "savings": 0 }
+      },
+      "contractStatus": "UFA",
+      "freeAgentYear": 2026,
+      "projectedContract": { "years": 1, "total": 950000, "aav": 950000, "source": "Star-Telegram" }
+    },
+    {
+      "id": 52,
+      "name": "Brandon Aubrey",
+      "position": "K",
+      "age": null,
+      "pffGrade": null,
+      "salary": {
+        "2026": { "capHit": 0, "baseSalary": 0, "dead": 0, "savings": 0 }
+      },
+      "contractStatus": "RFA",
+      "freeAgentYear": 2026,
+      "note": "RFA per 2026 list",
+      "projectedContract": { "years": 4, "total": 26000000, "aav": 6500000, "source": "Star-Telegram" }
+    },
+    {
+      "id": 53,
+      "name": "Brock Hoffman",
+      "position": "C",
+      "age": null,
+      "pffGrade": null,
+      "salary": {
+        "2026": { "capHit": 0, "baseSalary": 0, "dead": 0, "savings": 0 }
+      },
+      "contractStatus": "RFA",
+      "freeAgentYear": 2026,
+      "note": "RFA per 2026 list",
+      "projectedContract": { "years": 2, "total": 5500000, "aav": 2750000, "source": "Star-Telegram" }
+    },
+    {
+      "id": 54,
+      "name": "Malik Davis",
+      "position": "RB",
+      "age": null,
+      "pffGrade": null,
+      "salary": {
+        "2026": { "capHit": 0, "baseSalary": 0, "dead": 0, "savings": 0 }
+      },
+      "contractStatus": "RFA",
+      "freeAgentYear": 2026,
+      "note": "RFA per 2026 list"
+    }
+  ]
+}
+
