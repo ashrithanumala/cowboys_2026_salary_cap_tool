@@ -1,16 +1,6 @@
-# React + Vite
+I made this tool for fans to try managing the Cowboys' salary cap for the 2026 season. You can track cap hits, dead money, PFF grades, and test roster moves like cuts, trades, restructures, tags, RFA tenders, and re‑signs. It also includes a free‑agent signing modal, cap usage summaries, and shareable move lists. All data comes from Spotrac and Blogging the Boys. In the future, you can edit the player data if it is outdated by editing src/data/players.json. This tool is not associated with the Dallas Cowboys or the NFL.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Links:
+- https://www.spotrac.com/nfl/dallas-cowboys/yearly
+- https://www.bloggingtheboys.com/post/U3xiThW_yA8U
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
