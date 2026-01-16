@@ -25,7 +25,7 @@ export default function PlayerRow({ player, playerAction, onClick, onRemove, sel
   const yearSalary = player.salary[selectedYear]
   
   // Show UFA players even without salary if showFreeAgents is on
-  if (!yearSalary && player.contractStatus !== 'UFA' && !playerAction && !player.isAddedFreeAgent) return null
+  if (!yearSalary && player.contractStatus !== 'UFA' && player.contractStatus !== 'ERFA' && !playerAction && !player.isAddedFreeAgent) return null
 
   const formatMoney = (value) => {
     if (value === 0 || value === undefined) return '-'
@@ -122,6 +122,12 @@ export default function PlayerRow({ player, playerAction, onClick, onRemove, sel
         return (
           <span className="px-2 py-1 rounded text-xs font-medium bg-yellow-500/20 text-yellow-400 border border-yellow-500/30">
             UFA
+          </span>
+        )
+      case 'ERFA':
+        return (
+          <span className="px-2 py-1 rounded text-xs font-medium bg-amber-500/20 text-amber-400 border border-amber-500/30">
+            ERFA
           </span>
         )
       case 'RFA':

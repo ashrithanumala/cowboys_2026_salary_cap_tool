@@ -70,16 +70,27 @@ export default function FilterBar({ filter, onFilterChange }) {
         </select>
       </div>
 
-      {/* Show Free Agents toggle */}
-      <label className="flex items-center gap-2 cursor-pointer">
-        <input
-          type="checkbox"
-          checked={filter.showFreeAgents}
-          onChange={(e) => onFilterChange({ ...filter, showFreeAgents: e.target.checked })}
-          className="w-4 h-4 rounded bg-black/40 border-cowboys-silver/30 text-cowboys-royal focus:ring-cowboys-royal focus:ring-offset-0"
-        />
-        <span className="text-sm text-gray-400">Show Free Agents</span>
-      </label>
+      {/* Toggles */}
+      <div className="flex items-center gap-4">
+        <label className="flex items-center gap-2 cursor-pointer">
+          <input
+            type="checkbox"
+            checked={filter.showFreeAgents}
+            onChange={(e) => onFilterChange({ ...filter, showFreeAgents: e.target.checked })}
+            className="w-4 h-4 rounded bg-black/40 border-cowboys-silver/30 text-cowboys-royal focus:ring-cowboys-royal focus:ring-offset-0"
+          />
+          <span className="text-sm text-gray-400">Show Free Agents</span>
+        </label>
+        <label className="flex items-center gap-2 cursor-pointer">
+          <input
+            type="checkbox"
+            checked={filter.showDeadCap}
+            onChange={(e) => onFilterChange({ ...filter, showDeadCap: e.target.checked })}
+            className="w-4 h-4 rounded bg-black/40 border-cowboys-silver/30 text-cowboys-royal focus:ring-cowboys-royal focus:ring-offset-0"
+          />
+          <span className="text-sm text-gray-400">Show Dead Cap</span>
+        </label>
+      </div>
     </div>
   )
 }

@@ -34,7 +34,7 @@ function App() {
   const [selectedYear, setSelectedYear] = useState('2026')
   const [players, setPlayers] = useState(data.players)
   const [playerActions, setPlayerActions] = useState({}) 
-  const [filter, setFilter] = useState({ position: 'ALL', search: '', showFreeAgents: false })
+  const [filter, setFilter] = useState({ position: 'ALL', search: '', showFreeAgents: false, showDeadCap: false })
   const [sortConfig, setSortConfig] = useState({ key: 'capHit', direction: 'desc' })
   const [selectedPlayer, setSelectedPlayer] = useState(null)
   const [showAddFreeAgent, setShowAddFreeAgent] = useState(false)
@@ -153,9 +153,14 @@ function App() {
         const hasContract = yearSalary && (yearSalary.capHit > 0 || p.contractStatus === 'Dead Cap' || p.contractStatus === 'VOID')
         const isUFA = p.contractStatus === 'UFA'
         const isRFA = p.contractStatus === 'RFA'
+        const isERFA = p.contractStatus === 'ERFA'
         const isAddedFA = p.isAddedFreeAgent
-        return (hasContract && !isUFA) || isRFA || isAddedFA
+        return (hasContract && !isUFA) || isRFA || isERFA || isAddedFA
       })
+    }
+
+    if (!filter.showDeadCap) {
+      result = result.filter(p => p.contractStatus !== 'Dead Cap' && p.contractStatus !== 'VOID')
     }
     
     // Sort
@@ -211,8 +216,11 @@ function App() {
       
       return sortConfig.direction === 'asc' ? aValue - bValue : bValue - aValue
     })
-    
-    return result
+
+    // Keep dead cap entries at the bottom
+    const activePlayers = result.filter(p => p.contractStatus !== 'Dead Cap' && p.contractStatus !== 'VOID')
+    const deadCapPlayers = result.filter(p => p.contractStatus === 'Dead Cap' || p.contractStatus === 'VOID')
+    return [...activePlayers, ...deadCapPlayers]
   }, [players, filter, sortConfig, selectedYear, playerActions])
 
   const handlePlayerAction = (playerId, action) => {
@@ -276,11 +284,13 @@ function App() {
 
       switch (action.type) {
         case 'cut_pre_june1':
-          groupedMoves['Cuts (Pre-June 1)'].push(`Cut (Pre-June 1): ${player?.name} — Dead ${formatMoney(yearSalary?.dead || 0)}`)
+          groupedMoves['Cuts (Pre-June 1)'].push(
+            `Cut (Pre-June 1): ${player?.name} — Save ${formatMoney(yearSalary?.savings || 0)}, Dead ${formatMoney(yearSalary?.dead || 0)}`
+          )
           break
         case 'cut_post_june1':
           groupedMoves['Cuts (Post-June 1)'].push(
-            `Cut (Post-June 1): ${player?.name} — ${selectedYear} ${formatMoney(action.year1Dead || 0)}, ${Number(selectedYear) + 1} ${formatMoney(action.year2Dead || 0)}`
+            `Cut (Post-June 1): ${player?.name} — Save ${formatMoney(yearSalary?.savings || 0)}, Dead ${formatMoney(action.year1Dead || 0)} in ${selectedYear}, ${formatMoney(action.year2Dead || 0)} in ${Number(selectedYear) + 1}`
           )
           break
         case 'trade':
@@ -303,9 +313,11 @@ function App() {
         case 'restructure':
           groupedMoves['Restructures'].push(`Restructure: ${player?.name} — Savings ${formatMoney(action.savings || 0)}`)
           break
-        case 'resign':
-          groupedMoves['Re-signs'].push(`Re-sign: ${player?.name} — ${action.years} years @ ${formatMoney(action.aav || 0)}/yr`)
+        case 'resign': {
+          const yearsLabel = action.years === 1 ? 'year' : 'years'
+          groupedMoves['Re-signs'].push(`Re-sign: ${player?.name} — ${action.years} ${yearsLabel} @ ${formatMoney(action.aav || 0)}/yr`)
           break
+        }
         default:
           break
       }
@@ -324,6 +336,7 @@ function App() {
       .flatMap(([title, items]) => [title + ':', ...items, ''])
 
     const shareText = [
+      `Available Space: ${formatMoney(availableCap)}`,
       'Moves:',
       ...(moveSections.length > 0 ? moveSections : ['No cap moves yet'])
     ].join('\n').trim()

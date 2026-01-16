@@ -49,9 +49,10 @@ const MARKET_VALUES = {
 }
 
 const RFA_TENDER_VALUES = {
-  original: 4500000,
-  second: 5600000,
-  first: 7000000
+  // 2025 tender floors (or 110% of prior-year base salary, if higher)
+  original: 3406000,
+  second: 5346000,
+  first: 7458000
 }
 
 export default function PlayerModal({ 
@@ -136,7 +137,7 @@ export default function PlayerModal({
   const canBeTraded = player.contractStatus === 'Signed'
   const canBeTagged = player.contractStatus === 'UFA'
   const canBeTendered = player.contractStatus === 'RFA'
-  const canBeResigned = player.contractStatus === 'UFA' || player.contractStatus === 'RFA'
+  const canBeResigned = player.contractStatus === 'UFA' || player.contractStatus === 'RFA' || player.contractStatus === 'ERFA'
   
   // Can restructure if signed with base salary > $1M and remaining years
   const remainingYears = availableYears.filter(y => parseInt(y) >= parseInt(selectedYear)).length
@@ -213,6 +214,7 @@ export default function PlayerModal({
                   player.contractStatus === 'Signed' ? 'bg-green-500/20 text-green-400' :
                   player.contractStatus === 'UFA' ? 'bg-yellow-500/20 text-yellow-400' :
                   player.contractStatus === 'RFA' ? 'bg-orange-500/20 text-orange-400' :
+                  player.contractStatus === 'ERFA' ? 'bg-amber-500/20 text-amber-400' :
                   'bg-gray-500/20 text-gray-400'
                 }`}>
                   {player.contractStatus}
